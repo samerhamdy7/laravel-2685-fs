@@ -1,5 +1,9 @@
 @extends('layouts.index')
 
+@section('page-title' , 'Search Users')
+
+@section('page-name' , 'Search Users')
+
 @section('main-content')
     <form action="{{ route('search') }}" method="GET" class="mb-4 flex justify-center items-center">
         <input type="text" name="query" placeholder="Search A User" class="p-2 border rounded">
